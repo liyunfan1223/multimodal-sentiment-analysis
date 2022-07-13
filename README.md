@@ -9,7 +9,7 @@
 │ ├─baseline.py
 │ ├─model.py
 │ └─data_utils.py
-├─data                      训练数据-文本和图像(未上传) 
+├─data                      训练数据-文本和图像
 ├─label                     训练数据-标签    
 │ ├─test_without_label.txt
 │ └─train.txt
@@ -26,9 +26,6 @@
 ```bash
 pip install -r requirements.txt
 ```
-
-## 添加数据集
-请手动将训练数据中的文本和图像放入data/
 
 ## 查看可调整参数
 ```bash
