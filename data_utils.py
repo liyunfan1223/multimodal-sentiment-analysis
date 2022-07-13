@@ -96,7 +96,7 @@ def collate_fn(data_list):
     text = [data['text'] for data in data_list]
     text = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=30)
 
-    return guid, torch.LongTensor(tag), image, text
+    return guid, None if tag[0] == None else torch.LongTensor(tag), image, text
 
 def get_data_loader(train_data_list, test_data_list) -> (DataLoader, DataLoader, DataLoader):
     """
