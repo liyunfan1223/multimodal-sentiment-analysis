@@ -48,7 +48,16 @@ python ./main.py --image_only
 python ./main.py --text_only
 ```
 
+消融实验结果（以验证集上最佳的模型为准）：
+
+|            |    ACC     |  MAC_F1   |
+| :--------: | :--------: | :-------: |
+| Image only |   65.25%   |   55.66   |
+| Text only  |   73.50%   |   64.63   |
+|    Both    | **77.25%** | **67.12** |
+
 ## 预测测试集
+
 ```bash
 python ./main.py --do_test
 ```
